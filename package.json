@@ -1,0 +1,31 @@
+{
+  "name": "wikipedia-stopword-crawler",
+  "version": "0.0.1",
+  "description": "Crawl content of all pages for a wikipedia-site to use in stopword analysis.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eklem/recipes-crawlers.git"
+  },
+  "keywords": [
+    "npl",
+    "stopword",
+    "crawler",
+    "javascript"
+  ],
+  "dependencies": {
+    "norch-crawlers": "0.0.3",
+    "request": "2.81.0",
+    "cheerio": "0.22.0",
+    "jsonfile": "3.0.0"
+  },
+  "author": "Espen Klem",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eklem/wikipedia-stopword-crawler/issues"
+  },
+  "homepage": "https://github.com/eklem/wikipedia-stopword--crawlerp#readme"
+}
