@@ -8,7 +8,7 @@ const cheerio = require('cheerio')
 let domain = 'http://no.wikipedia.org'
 let startURL = 'https://no.wikipedia.org/w/index.php?title=Spesial:Alle_sider&from='
 let urls = []
-const file = 'wikipedia-no-urls.json'
+const file = 'no-nb-urls.json'
 const headerOptions = {
   headers: {
     'User-Agent': 'NorchCrawlersBot/0.0.3 (+https://eklem.github.io/wikipedia-github-crawlers/)',
