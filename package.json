@@ -18,10 +18,10 @@
     "javascript"
   ],
   "dependencies": {
-    "norch-crawlers": "0.0.3",
-    "request": "2.81.0",
     "cheerio": "0.22.0",
-    "jsonfile": "3.0.0"
+    "jsonfile": "3.0.0",
+    "norch-crawlers": "0.0.3",
+    "request": "^2.88.0"
   },
   "author": "Espen Klem",
   "license": "MIT",
