@@ -50,7 +50,7 @@ function crawlUrls(requestUrl, urls) {
     if (nextPageExists > 0) {
       pageCrawled++
       console.log('Pages crawled: ' + pageCrawled)
-      nc.playNice(2000).then(() => {
+      nc.playNice(5000).then(() => {
         crawlUrls(nextPage, urls)
       })
     } else if (nextPageExists === 0) {
