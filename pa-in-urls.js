@@ -6,8 +6,9 @@ const cheerio = require('cheerio')
 
 // Variables
 let domain = 'https://pa.wikipedia.org/'
-let startURL = 'https://pa.wikipedia.org/w/index.php?title=%E0%A8%96%E0%A8%BC%E0%A8%BE%E0%A8%B8:%E0%A8%B8%E0%A8%BE%E0%A8%B0%E0%A9%87_%E0%A8%B8%E0%A8%AB%E0%A8%BC%E0%A9%87&hiderਅਗਲਾ ਸਫ਼ਾ1'
+let startURL = 'https://pa.wikipedia.org/w/index.php?title=%E0%A8%96%E0%A8%BC%E0%A8%BE%E0%A8%B8:%E0%A8%B8%E0%A8%BE%E0%A8%B0%E0%A9%87_%E0%A8%B8%E0%A8%AB%E0%A8%BC%E0%A9%87&hideredirects=1'
 let urls = []
+let pageCrawled = 0
 const file = 'pa-in-urls.json'
 const headerOptions = {
   headers: {
@@ -38,7 +39,7 @@ function crawlUrls(requestUrl, urls) {
     let nextPage = ''
     var nextPageExists = 0
     $('div.mw-allpages-nav a').each(function (index, element) {
-      if (nc.matchStringToPattern($(element),'ਅਗਲਾ ਸਫ਼ਾ') && nextPage === '') {
+      if (nc.matchStringToPattern($(element).text(),'ਅਗਲਾ ਸਫ਼ਾ') && nextPage === '') {
         nextPageExists++
         nextPage = domain + $(element).attr('href')
       }
@@ -47,6 +48,8 @@ function crawlUrls(requestUrl, urls) {
     console.log('next pag exists: ' + nextPageExists)
 
     if (nextPageExists > 0) {
+      pageCrawled++
+      console.log('Pages crawled: ' + pageCrawled)
       nc.playNice(2000).then(() => {
         crawlUrls(nextPage, urls)
       })

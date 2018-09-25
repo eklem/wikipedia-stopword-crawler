@@ -1,6 +1,6 @@
 {
   "name": "wikipedia-stopword-crawler",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Crawl content of all pages for a wikipedia-site to use in stopword analysis or other natural language processing.",
   "main": "index.js",
   "scripts": {
