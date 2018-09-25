@@ -1,7 +1,7 @@
 {
   "name": "wikipedia-stopword-crawler",
-  "version": "0.0.1",
-  "description": "Crawl content of all pages for a wikipedia-site to use in stopword analysis.",
+  "version": "0.0.2",
+  "description": "Crawl content of all pages for a wikipedia-site to use in stopword analysis or other natural language processing.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,6 +13,7 @@
   "keywords": [
     "npl",
     "stopword",
+    "stopwords",
     "crawler",
     "javascript"
   ],
