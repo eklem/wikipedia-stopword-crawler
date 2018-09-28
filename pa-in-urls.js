@@ -9,7 +9,7 @@ let domain = 'https://pa.wikipedia.org/'
 let startURL = 'https://pa.wikipedia.org/w/index.php?title=%E0%A8%96%E0%A8%BC%E0%A8%BE%E0%A8%B8:%E0%A8%B8%E0%A8%BE%E0%A8%B0%E0%A9%87_%E0%A8%B8%E0%A8%AB%E0%A8%BC%E0%A9%87&hideredirects=1'
 let urls = []
 let pageCrawled = 0
-const file = 'pa-in-urls.json'
+const file = 'urls-pa-in.json'
 const headerOptions = {
   headers: {
     'User-Agent': 'NorchCrawlersBot/0.0.3 (+https://eklem.github.io/wikipedia-github-crawlers/)',

@@ -6,8 +6,8 @@ const jsonfile = require('jsonfile')
 const fs = require('fs');
 
 // Constants
-const file = 'urls-no-nb.json'
-const  wstream = fs.createWriteStream('docs-no-nb.str')
+const file = 'urls-pa-in.json'
+const  wstream = fs.createWriteStream('docs-pa-in.str')
 
 // Variables
 let startIterator = 0
